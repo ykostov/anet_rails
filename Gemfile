@@ -4,6 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.0'
 
 
+
+gem 'solidus_i18n'
+gem 'rails-i18n'
+gem 'kaminari-i18n'
+
+
 # gem 'bootstrap-sass'
 gem 'solidus'
 gem 'solidus_auth_devise'
