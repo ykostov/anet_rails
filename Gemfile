@@ -3,13 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-
+gem 'cookieconsent'
+# gem 'cookies_eu'
 
 gem 'solidus_i18n'
 gem 'rails-i18n'
 gem 'kaminari-i18n'
 
 gem 'solidus_stripe', '~> 3.0'
+
+
 
 
 # gem 'bootstrap-sass'
