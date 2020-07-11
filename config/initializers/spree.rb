@@ -10,15 +10,15 @@
   config.static_model_preferences.add(
       Spree::PaymentMethod::StripeCreditCard,
       'stripe_env_credentials',
-      secret_key: ENV['STRIPE_SECRET_KEY'],
-      publishable_key: ENV['STRIPE_PUBLISHABLE_KEY'],
-      stripe_country: 'US',
+      secret_key: ENV['sk_test_51H3hsWJjwJ8I0Zh3RV8L75t3jUi5d3bNL38zdgm1CfM638NGrXNMaOaOWQjM4WhgfAVhnCOS7oFzITaJTms2Ay5B00p7tzIaUf'],
+      publishable_key: ENV['pk_test_51H3hsWJjwJ8I0Zh3lmc61dFxbHl7LO6uwziIMLyapvxnQK4GZxEFoic44tA8FcgHAqXUc0UxwylFTaqqMG8HmYRF00kz1aFLbk'],
+      stripe_country: 'BG',
       v3_elements: false,
       v3_intents: false,
       server: Rails.env.production? ? 'production' : 'test',
       test_mode: !Rails.env.production?
     )
-  end
+
 
 
 
@@ -28,7 +28,7 @@
   config.currency = "BGN"
 
   # from address for transactional emails
-  config.mails_from = "spree@office.com"
+  config.mails_from = "mv24ko@gmail.com"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
