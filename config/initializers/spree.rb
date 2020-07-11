@@ -1,8 +1,28 @@
 # Configure Solidus Preferences
 # See http://docs.solidus.io/Spree/AppConfiguration.html for details
 
-Spree.config do |config|
+ Spree.config do |config|
   # Core:
+
+# Stripe Payment in Solidus
+
+
+  config.static_model_preferences.add(
+      Spree::PaymentMethod::StripeCreditCard,
+      'stripe_env_credentials',
+      secret_key: ENV['STRIPE_SECRET_KEY'],
+      publishable_key: ENV['STRIPE_PUBLISHABLE_KEY'],
+      stripe_country: 'US',
+      v3_elements: false,
+      v3_intents: false,
+      server: Rails.env.production? ? 'production' : 'test',
+      test_mode: !Rails.env.production?
+    )
+  end
+
+
+
+
 
   # Default currency for new sites
   config.currency = "BGN"
@@ -34,6 +54,8 @@ Spree.config do |config|
 
   # Custom logo for the frontend
    config.logo = "logo/logo 2.png"
+
+  # config.adv1 = "adv/autodoc_bg-300x96.jpg"
 
   # Template to use when rendering layout
   # config.layout = "spree/layouts/spree_application"
