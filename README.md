@@ -12,10 +12,10 @@ Designed with Ruby on Rails, I have used some code from Spree and Solidus.
 3. So now you have my website, next step - setup:
 ```bundle install```
 4. Now you must create an admin user:
-``` bin/rails generate spree:install ```
-The default values are as follows:
-Username: admin@example.com
-Password: test 123
+``` bin/rails generate spree:install ``` <br>
+The default values are as follows: <br>
+Username: admin@example.com <br>
+Password: test 123 <br>
 5. Everything is Ready, now let's start the rails server
 ``` bundle exec rails s ``` or just ```rails s```.
 6. Open your browser, and enter the url: localhost:3000.
