@@ -21,4 +21,4 @@ Password: test 123 <br>
 <br>6. Open your browser, and enter the url: localhost:3000.
 <br>7. Here you go, you have the e-commerce website of mine :)
 
-<h1> REMEMBER: I DO NOT HAVE RIGHT TO USE ANY OF MY CODE FOR COMMERCIAL PURPROSES ! </H1>
+<h1> REMEMBER: YOU DO NOT HAVE RIGHT TO USE ANY OF MY CODE FOR COMMERCIAL PURPROSES ! </H1>
